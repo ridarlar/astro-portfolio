@@ -7,77 +7,65 @@ export const loaderAnimation = [
 ]
 
 export const LINKS = {
-  github: 'https://github.com/bue221',
-  linkedin: 'https://www.linkedin.com/in/bue221/',
-  mail: 'mailto:camiloplaza3@gmail.com',
-  instagram: 'https://www.instagram.com/caj_ink/',
-  medium: 'https://ladvace.medium.com/',
-  discord: 'https://discordapp.com/users/163300027618295808',
+  github: 'https://github.com/ridarlar',
+  linkedin: 'https://www.linkedin.com/in/richardaguillar/',
+  mail: 'mailto:richard.aguilar.2020@hotmail.com',
+  twitter: 'https://x.com/ridarlar',
+  medium: 'https://google.com',
+  discord: 'https://discordapp.com/users/798959149760118854',
 }
 
 // Global
 export const SITE: Site = {
-  TITLE: 'Astro Sphere',
+  TITLE: 'Richard Aguilar',
   DESCRIPTION:
-    'Welcome to Astro Sphere, a portfolio and blog for designers and developers.',
-  AUTHOR: 'Mark Horn',
+    'Bienvenido a mi portfolio y blog.',
+  AUTHOR: 'Richard Aguilar',
 }
 
 // Work Page
 export const WORK: Page = {
   TITLE: 'Work',
-  DESCRIPTION: 'Places I have worked.',
+  DESCRIPTION: 'Lugares donde trabaje.',
 }
 
 // Blog Page
 export const BLOG: Page = {
   TITLE: 'Blog',
-  DESCRIPTION: 'Writing on topics I am passionate about.',
+  DESCRIPTION: 'Escribiendo sobre temas que me gustan.',
 }
 
 // Projects Page
 export const PROJECTS: Page = {
   TITLE: 'Projects',
-  DESCRIPTION: 'Recent projects I have worked on.',
+  DESCRIPTION: 'Mis proyectos personales.',
 }
 
 // Search Page
 export const SEARCH: Page = {
   TITLE: 'Search',
-  DESCRIPTION: 'Search all posts and projects by keyword.',
+  DESCRIPTION: 'Busca todo lo que escribo.',
 }
 
 // Study Page
 export const STUDIES = [
   {
-    title: 'Computer Science',
-    institution: 'Universidad Central',
-    link: 'https://www.ucentral.edu.co/',
-    date: '2019 - 2027',
-  },
-  {
-    title: '...',
-    institution: 'Platzi',
-    link: 'https://platzi.com/',
-    date: '2018 - 2022',
+    title: 'Tecnólogo superior en desarrollo de software.',
+    institution: 'ITS Japón',
+    link: 'https://itsjapon.edu.ec/',
+    date: '2022 - 2024',
   },
   {
     title: '...',
     institution: 'Udemy',
     link: 'https://www.udemy.com/',
-    date: '2018 - 2022',
+    date: '2020 - 2021',
   },
   {
     title: '...',
     institution: 'Youtube',
-    link: 'https://www.youtube.com/@midulive',
-    date: '2018 - 2022',
-  },
-  {
-    title: 'Tattoo Artist',
-    institution: 'Tattoo Academy',
-    link: 'https://www.instagram.com/tattoodcacademy/',
-    date: '2024 - 2025',
+    link: 'https://www.youtube.com/@FaztTech',
+    date: '2020 - 2022',
   },
 ]
 

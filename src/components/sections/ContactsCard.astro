@@ -3,20 +3,21 @@ import Card from '../Card.astro'
 import { LINKS } from '../../lib/constants'
 ---
 
-<Card colSpan="md:col-span-1" rowSpan="md:row-span-4">
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-2">
   <div class="h-full">
     <header class="flex items-center">
       <h1 class="text-xl font-bold text-foreground">
-        Let's start working together!
+       ¡Comencemos a trabajar juntos!
       </h1>
     </header>
     <address class="mt-4 flex flex-col">
-      <h2 class="text-gray-500">Contact Details</h2>
-      <p>camiloplaza3@gmail.com</p>
-      <p>🇨🇴 Bogotá D.C, Colombia 🇨🇴</p>
+      <h2 class="text-gray-500">Destalles de contacto</h2>
+      <p class="underline underline-offset-8">richard.aguilar.2020</br>@hotmail.com</p>
+      </br>
+      <p> 🇪🇨Quito, Ecuador 🇪🇨 </p>
     </address>
     <div class="mt-4 flex w-fit flex-col">
-      <h2 class="text-gray-500">Socials</h2>
+      <h2 class="text-gray-500">Mis redes</h2>
       <ul>
         <li>
           <a href={LINKS.linkedin} target="_blank">Linkedin</a>
@@ -25,7 +26,7 @@ import { LINKS } from '../../lib/constants'
           <a href={LINKS.github} target="_blank">Github</a>
         </li>
         <li>
-          <a href={LINKS.instagram} target="_blank">Instagram</a>
+          <a href={LINKS.twitter} target="_blank">Twitter</a>
         </li>
       </ul>
     </div>

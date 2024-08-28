@@ -8,7 +8,7 @@ import ContactsCard from '../components/sections/ContactsCard.astro'
 import Now from '../components/sections/Now.astro'
 import CVCard from '../components/sections/CVCard.astro'
 import ExperienceCard from '../components/sections/ExperienceCard.astro'
-import TattooCard from '../components/sections/TattooCard.astro'
+import BlogCard from '../components/sections/BlogCard.astro'
 import StudyCard from '../components/sections/StudyCard.astro'
 //
 import { motion, AnimatePresence } from 'framer-motion'
@@ -38,8 +38,8 @@ import { motion, AnimatePresence } from 'framer-motion'
 </script>
 
 <BaseLayout
-  title="Andrés Plaza - Full Stack Developer"
-  description="Andrés Plaza - Full Stack Developer - Portfolio, Projects, CV, About Me, Contact, Timezone, Now, Experience, Tattoo, Study"
+  title="Richard Aguilar - Full Stack Developer"
+  description="Richard Aguilar - Full Stack Developer - Portfolio, Projects, CV, About Me, Contact, Timezone, Now, Experience, Ecuador, Study, Expert"
 >
   <div
     slot="loader"
@@ -47,7 +47,7 @@ import { motion, AnimatePresence } from 'framer-motion'
   >
   </div>
   <main
-    class="relative m-auto grid w-full max-w-6xl gap-2 overflow-hidden p-2 sm:gap-2 sm:p-4 md:grid-cols-2 md:gap-3 md:p-6 lg:grid-cols-4 lg:grid-rows-8 lg:gap-4"
+    class="relative m-auto grid w-full max-w-6xl gap-2 overflow-hidden p-2 sm:gap-2 sm:p-4 md:grid-cols-2 md:gap-3 md:p-6 lg:grid-cols-4 lg:grid-rows-6 lg:gap-4"
   >
     <IntroCard />
     <AboutMe />
@@ -58,28 +58,44 @@ import { motion, AnimatePresence } from 'framer-motion'
       rowSpan="md:row-span-2"
       title="Portfolio & Projects"
       href="/portfolio"
-    />
-    <TimeZoneCard />
-    <ContactsCard />
+    >
+      <div>
+        <img
+          width="50"
+          height="50"
+          src="/avatar2.png"
+          class="pointer-events-none absolute bottom-[-20px] right-[-110px] z-[-1] max-h-[300px] w-auto select-none opacity-50 md:relative md:bottom-auto md:right-auto md:z-auto md:opacity-100"
+          alt="golang avatar for blog"
+        />
+      </div> 
+    </Card>
+    <Card 
+      colSpan="md:col-span-1"
+      rowSpan="md:row-span-2"
+      title="Mi Blog"
+      href="/blog"
+      >
+      <div>
+        <img
+          width="50"
+          height="50"
+          src="/avatar.png"
+          class="pointer-events-none absolute bottom-[-20px] right-[-110px] z-[-1] max-h-[300px] w-auto select-none opacity-50 md:relative md:bottom-auto md:right-auto md:z-auto md:opacity-100"
+          alt="golang avatar for blog"
+        />
+      </div>
+      </Card>
     <ExperienceCard />
+    <ContactsCard />
     <Card colSpan="md:col-span-1" rowSpan="md:row-span-1">
       <div class="flex h-full flex-col justify-between">
         <blockquote class="mt-6 border-l-2 pl-6 italic">
-          “Anything one man can imagine, other men can make real.”
+          "Si puedes imaginarlo puedes programarlo"
         </blockquote>
-        <p class="mt-2 text-xs">- Jules Verne</p>
+        <p class="mt-2 text-xs">- Alejandro Taboada</p>
       </div>
     </Card>
-    <TattooCard />
+    <TimeZoneCard />
     <StudyCard />
-    <!-- <Card colSpan="md:col-span-1" rowSpan="md:row-span-1">
-      <p class="text-xs">
-        © 2023 · Crafted with ♥️ using <a
-          href="https://astro.build/"
-          target="_blank"
-          class="text-red-500">Astro</a
-        > by Gianmarco.
-      </p>
-    </Card> -->
   </main>
 </BaseLayout>
