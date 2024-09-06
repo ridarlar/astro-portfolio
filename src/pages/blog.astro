@@ -1,58 +1,34 @@
 ---
-import { WORK } from '../lib/constants'
+import PostList from '../components/PostList.astro'
+import {POSTSLIST} from '../lib/constants.ts'
+import { BLOG } from '../lib/constants'
 import BaseLayout from '../layouts/BaseLayout.astro'
 import TopLayout from '../layouts/TopLayout.astro'
 import BottomLayout from '../layouts/BottomLayout.astro'
-import ProjectCard from '../components/ProjectCard.astro'
-
-//import { contentfulClient } from '../lib/contentful'
-import { documentToHtmlString } from '@contentful/rich-text-html-renderer'
-import type { EntryFieldTypes } from 'contentful'
-import { data } from '../lib/projectsListFile'
-
-interface Project {
-  contentTypeId: 'Projects'
-  fields: {
-    name: EntryFieldTypes.Text
-    img: EntryFieldTypes.AssetLink
-    website: EntryFieldTypes.EntryResourceLink<any>
-    repositorio: EntryFieldTypes.EntryResourceLink<any>
-  }
-}
-
-//const entries = await contentfulClient.getEntries<Project>({})
-const entries = data
-console.log(entries)
 ---
 
-<BaseLayout
-  title="Blog"
-  description="Mira mis posts"
->
-  <main class="flex min-h-[80vh] flex-auto flex-col" transition:animate="slide">
+<BaseLayout title={BLOG.TITLE} description={BLOG.DESCRIPTION}>
+  <main class="flex min-h-[80vh] flex-auto flex-col" transition:animate="fade">
     <TopLayout>
       <h2
         class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0"
       >
-        Mi Blog
+        {BLOG.TITLE}
       </h2>
     </TopLayout>
     <BottomLayout>
-      <div class="flex w-full flex-wrap justify-center gap-2">
-
+      <ul class="w-full flex flex-col items-center">
         {
-          console.log(entries)
+          POSTSLIST.map((postInfo)=>(
+            <PostList
+              key= {postInfo.key}
+              title= {postInfo.title}
+              keywords= {postInfo.keywords}
+              resume= {postInfo.resume}
+              />
+          ))
         }
-        <!--  <ProjectCard
-              key={entry?.sys?.id}
-              href={entry?.fields?.website}
-              heading={entry?.fields?.name}
-              subheading={entry?.fields?.description}
-              imagePath={entry?.fields?.img?.fields?.file.url}
-              altText={entry?.fields?.img?.fields.title}
-              class="w-full sm:w-2/5"
-              />  -->
-      </div>
-    </BottomLayout>
+      </ul>
+      </BottomLayout>
   </main>
 </BaseLayout>

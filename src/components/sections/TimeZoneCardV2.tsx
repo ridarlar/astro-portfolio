@@ -3,13 +3,11 @@ import moment from 'moment-timezone'
 
 const Timezone = ({ timezone }: any) => {
   const [dateTime, setDateTime] = useState('')
-
   useEffect(() => {
     const interval = setInterval(() => {
       const now = moment().tz(timezone)
       setDateTime(now.format('dddd, DD MMMM YYYY [a] h:mm:ss A'))
     }, 1000)
-
     return () => clearInterval(interval)
   }, [timezone])
 

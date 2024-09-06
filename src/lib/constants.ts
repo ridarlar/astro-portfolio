@@ -44,7 +44,7 @@ export const PROJECTS: Page = {
 // Search Page
 export const SEARCH: Page = {
   TITLE: 'Search',
-  DESCRIPTION: 'Busca todo lo que escribo.',
+  DESCRIPTION: 'Busca todo lo que publico.',
 }
 
 // Study Page
@@ -69,80 +69,68 @@ export const STUDIES = [
   },
 ]
 
+export const POSTSLIST = [
+  {
+    key: 'dfj324jtr9328fj',
+    date: '2024',
+    title: 'Some title',
+    keywords: 'Linux',
+    resume: 'Loremdojkygykjuguiyg kuygikuyguyguygkuygkuygkuygikuy guygiuygiuyi giuygouyguyguygiuygoiuy hoiuhpiuhoiuhol',
+    body: 'j;oj0cv9wqjref0qj243fgq3j94g0qj943gq;',
+    link: '/'
+  }
+  ,
+  {
+    key: 'dfj324jtr9kjhlk328fj',
+    date: '2024',
+    title: 'Some title',
+    keywords: 'Linux',
+    resume: 'Loremdojkf qhhhhhhhhhhhhhhhhhhh hhhhhhhhhhhhhhoie0fjqp ofijq;oweif',
+    body: 'j;oj0cv9wqjref0qj243fgq3j94g0qj943gq;',
+    link: '/'
+  }
+]
+
+
 export const EXPERIENCE = [
   {
-    company: 'Straico',
-    location: 'Bogotá D C, Colombia',
-    position: 'Software Engineer',
-    start: '2021',
-    link: 'https://straico.com/',
-    end: 'Current',
+    company: 'Tinguar',
+    location: 'Santo Domingo, Ecuador',
+    position: 'Web developer',
+    link: 'https://tinguar.com/',
+    start: '2023',
+    end: '2024',
     tasks: [
-      'Integration IA services with react and tailwind css',
-      'Development and build of DB with mongoDB',
+      'Desarrollo en Wordpress',
+      'Desarrollo mobile',
+      'Marketing social media',
     ],
   },
   {
-    company: 'Spot2',
-    location: 'Mexico City, Mexico',
-    position: 'Software Engineer',
-    link: 'https://spot2.mx/',
-    start: '2021',
-    end: 'Current',
+    company: 'Tinkin',
+    location: 'Quito, Ecuador',
+    position: 'FullStack software Engineer',
+    start: '2022',
+    link: 'https://www.tinkin.one/',
+    end: '2023',
     tasks: [
-      'Development of the Spot2 platform with the use of React, Redux, and Material UI',
-      'Development map with the use of Google Maps API',
-      'Development internal platform with the use of React, Redux, and Material UI',
-      'Testing and debugging',
+      'Desarrollar requisitos',
+      'Presentaciones con clientes',
+      'Pair programming',
+      'Tesiting',
+      'Scrum',
     ],
   },
   {
-    company: 'Imaginamos',
-    link: 'https://imaginamos.com/',
-    location: 'Bogotá D C, Colombia',
-    position: 'Frontend developer',
-    start: '2021',
+    company: 'Eina Fundation',
+    location: 'Quito, Ecuador',
+    position: 'FullStack software Engineer',
+    start: '2020',
+    link: 'https://www.tinkin.one/',
     end: '2021',
     tasks: [
-      'Development of the Imaginamos platform with the use of React, Redux, and Material UI',
-      'Work in ETB project with the use of React, Redux, and Material UI',
-    ],
-  },
-  {
-    company: 'INETUM',
-    location: 'Bogotá D C, Colombia',
-    position: 'Frontend developer',
-    start: '2021',
-    link: 'https://www.inetum.com/es',
-    end: '2021',
-    tasks: [
-      'Support in the QA area and bug review',
-      'Use of SCRUM methodology',
-      'Claro projects with the use of frameworks and libraries such as react and angular',
-      'Use of redux toolkit as aproposal which allowed a shorter development time when using this tool',
-    ],
-  },
-  {
-    company: 'S I G',
-    location: 'Bogotá D C, Colombia',
-    position: 'Software developer',
-    start: '2021',
-    end: '2021',
-    tasks: [
-      'Development of a dashboard with react admin and chartjs for managing and entering information',
-    ],
-  },
-  {
-    company: 'BOOKII',
-    location: 'Bogotá D C, Colombia',
-    position: 'Software developer',
-    start: '2019',
-    end: '2021',
-    tasks: [
-      'Productive collaborationwiththebackendteamforthecreationofthe conversationalclubs',
-      'Effective coding of conversational clubs following design guide lines and using the Redux statemanager',
-      'Creation of the Bookii page in Spanish and change of texts in cms',
-      'Generation of static posts using Gatsby and the Contentful cms for the Bookii blog',
+      'Desarrollar producto interno',
+      'Presentaciones con clientes',
     ],
   },
 ]
