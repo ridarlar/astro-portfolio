@@ -69,29 +69,6 @@ export const STUDIES = [
   },
 ]
 
-export const POSTSLIST = [
-  {
-    key: 'dfj324jtr9328fj',
-    date: '2024',
-    title: 'Some title',
-    keywords: 'Linux',
-    resume: 'Loremdojkygykjuguiyg kuygikuyguyguygkuygkuygkuygikuy guygiuygiuyi giuygouyguyguygiuygoiuy hoiuhpiuhoiuhol',
-    body: 'j;oj0cv9wqjref0qj243fgq3j94g0qj943gq;',
-    link: '/'
-  }
-  ,
-  {
-    key: 'dfj324jtr9kjhlk328fj',
-    date: '2024',
-    title: 'Some title',
-    keywords: 'Linux',
-    resume: 'Loremdojkf qhhhhhhhhhhhhhhhhhhh hhhhhhhhhhhhhhoie0fjqp ofijq;oweif',
-    body: 'j;oj0cv9wqjref0qj243fgq3j94g0qj943gq;',
-    link: '/'
-  }
-]
-
-
 export const EXPERIENCE = [
   {
     company: 'Tinguar',
