@@ -10,8 +10,9 @@ import CVCard from '../components/sections/CVCard.astro'
 import ExperienceCard from '../components/sections/ExperienceCard.astro'
 import BlogCard from '../components/sections/BlogCard.astro'
 import StudyCard from '../components/sections/StudyCard.astro'
-//
+import Portfolio from '../components/sections/Portfolio.astro'
 import { motion, AnimatePresence } from 'framer-motion'
+import Reflexion from '../components/sections/Reflexion.astro'
 ---
 
 <script>
@@ -53,48 +54,11 @@ import { motion, AnimatePresence } from 'framer-motion'
     <AboutMe />
     <CVCard />
     <Now />
-    <Card
-      colSpan="md:col-span-1"
-      rowSpan="md:row-span-2"
-      title="Portfolio & Projects"
-      href="/portfolio"
-    >
-      <div>
-        <img
-          width="50"
-          height="50"
-          src="/avatar2.png"
-          class="pointer-events-none absolute bottom-[-20px] right-[-110px] z-[-1] max-h-[300px] w-auto select-none opacity-50 md:relative md:bottom-auto md:right-auto md:z-auto md:opacity-100"
-          alt="golang avatar for blog"
-        />
-      </div> 
-    </Card>
-    <Card 
-      colSpan="md:col-span-1"
-      rowSpan="md:row-span-2"
-      title="Mi Blog"
-      href="/blog"
-      >
-      <div>
-        <img
-          width="50"
-          height="50"
-          src="/avatar.png"
-          class="pointer-events-none absolute bottom-[-20px] right-[-110px] z-[-1] max-h-[300px] w-auto select-none opacity-50 md:relative md:bottom-auto md:right-auto md:z-auto md:opacity-100"
-          alt="golang avatar for blog"
-        />
-      </div>
-      </Card>
+    <Portfolio />
+    <BlogCard />
     <ExperienceCard />
     <ContactsCard />
-    <Card colSpan="md:col-span-1" rowSpan="md:row-span-1">
-      <div class="flex h-full flex-col justify-between">
-        <blockquote class="mt-6 border-l-2 pl-6 italic">
-          "Si puedes imaginarlo puedes programarlo"
-        </blockquote>
-        <p class="mt-2 text-xs">- Alejandro Taboada</p>
-      </div>
-    </Card>
+    <Reflexion/>
     <TimeZoneCard />
     <StudyCard />
   </main>
