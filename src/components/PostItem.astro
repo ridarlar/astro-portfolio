@@ -1,0 +1,24 @@
+---
+const { datePost, title, keywords, resume, link } = Astro.props
+
+console.log(title)
+---
+
+<li
+  class="animate mt-4 border-b border-black/10 py-8 first-of-type:mt-0 first-of-type:pt-0 last-of-type:border-none dark:border-white/25"
+>
+  <div class="mb-4 text-sm uppercase">
+    {datePost}
+  </div>
+
+  <a
+    href={link}
+    class={`font-semibold ${link ? 'text-primary' : 'text-foreground'}`}
+  >
+    {title}
+  </a>
+  <div class="text-sm font-semibold">{keywords}</div>
+  <article class="prose dark:prose-invert">
+    {resume}
+  </article>
+</li>

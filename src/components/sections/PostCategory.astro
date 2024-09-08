@@ -8,11 +8,12 @@ const { tags } = Astro.props
 <Card colSpan="md:col-span-1" rowSpan="md:row-span-1" title="Categorias">
   <div class="mt-2 flex w-full flex-wrap items-center justify-center gap-2">
     {
-      tags.map((tag) => (
-        <a href={`/tags/${tag}`} target="__blank">
-          <Badge variant="outline">{tag}</Badge>
-        </a>
-      ))
+      tags &&
+        tags.map((tag: string) => (
+          <a href={`/tags/${tag}`} target="__blank">
+            <Badge variant="outline">{tag}</Badge>
+          </a>
+        ))
     }
   </div>
 </Card>
