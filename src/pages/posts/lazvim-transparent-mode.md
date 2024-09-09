@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Cómo activar el modo transparente en lazyvim: Una Guía Paso a Paso.'
 pubDate: '09-09-2024'
-resume: ''
+resume: 'En la guía publicada por Richard Aguilar, se explica cómo activar el modo transparente en Lazyvim. Primero, asegúrate de tener Lazyvim y la terminal XFCE instalados. Luego, accede a la configuración de Lazyvim, crea un archivo de configuración Lua para habilitar la transparencia, y ajusta los parámetros adecuados. Finalmente, configura la opacidad de la terminal XFCE para completar el proceso. Esto te permitirá tener un fondo transparente en Lazyvim, mejorando la apariencia de tu entorno de desarrollo.'
 author: 'Richard Aguilar'
 tags: ["Vim", "Lazyvim", "Terminal","Code editor","Linux"]
 ---
@@ -15,6 +15,7 @@ tags: ["Vim", "Lazyvim", "Terminal","Code editor","Linux"]
   2. _[Prerequisitos <i class="fa-solid fa-link" style="color: #0970be;"></i>](#title-2)_
 
   3. _[Habilitando el modo transparente <i class="fa-solid fa-link" style="color: #0970be;"></i>](#title-3)_
+  4. _[Configurando terminal <i class="fa-solid fa-link" style="color: #0970be;"></i>](#title-4)_
 <br/>
 
 ![Editor de codigo lazyvim con fondo transparente](/post-sources/lazyvim-wallpaper-transparent.png) 
@@ -43,7 +44,8 @@ Antes de comenzar con esta guia, asegurate de tneer lo siguiente:
 <br/><br/>
   1) **Lazyvim** - _[Link de descarga <i class="fa-solid fa-link" style="color: #0970be;"></i>](https://www.lazyvim.org/)_
 
-  2) **Xfce terminal** - _[Link de descarga <i class="fa-solid fa-link" style="color: #0970be;"></i>](https://www.linuxfromscratch.org/blfs/view/svn/xfce/xfce4-terminal.htmlhttps://www.linuxfromscratch.org/blfs/view/svn/xfce/xfce4-terminal.html)_
+  2) **Xfce terminal** - [Link de descarga <i class="fa-solid fa-link" style="color: #0970be;"></i>](https://docs.xfce.org/apps/xfce4-terminal/dropdown)
+
 <br/><br/>
 
 <section class="mt-8 mb-4" markdown='1'>
