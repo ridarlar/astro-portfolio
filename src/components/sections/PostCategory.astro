@@ -10,7 +10,7 @@ const { tags } = Astro.props
     {
       tags &&
         tags.map((tag: string) => (
-          <a href={`/tags/${tag}`} target="__blank">
+          <a href={`/tags/${tag}`}>
             <Badge variant="outline">{tag}</Badge>
           </a>
         ))

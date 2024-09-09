@@ -1,24 +1,31 @@
 ---
 const { datePost, title, keywords, resume, link } = Astro.props
-
+import Card from './Card.astro'
 console.log(title)
 ---
 
-<li
-  class="animate mt-4 border-b border-black/10 py-8 first-of-type:mt-0 first-of-type:pt-0 last-of-type:border-none dark:border-white/25"
->
-  <div class="mb-4 text-sm uppercase">
-    {datePost}
-  </div>
-
-  <a
-    href={link}
-    class={`font-semibold ${link ? 'text-primary' : 'text-foreground'}`}
+<div class="mb-3">
+  <Card
+    colSpan="md:col-span-1"
+    rowSpan="md:row-span-2"
+    href=`/content/blog/${link}`
   >
-    {title}
-  </a>
-  <div class="text-sm font-semibold">{keywords}</div>
-  <article class="prose dark:prose-invert">
-    {resume}
-  </article>
-</li>
+    <li
+      class="animate mt-4 border-b border-black/10 py-8 first-of-type:mt-0 first-of-type:pt-0 last-of-type:border-none dark:border-white/25"
+    >
+      <div class="mb-4 text-sm uppercase">
+        {datePost}
+      </div>
+
+      <h2 class={`font-semibold text-primary`}>
+        {title}
+      </h2>
+      <div class="mb-1 mt-1 text-sm">
+        {keywords.map((key: string) => <span class="mr-2">{key} /</span>)}
+      </div>
+      <article class="prose dark:prose-invert">
+        {resume}
+      </article>
+    </li>
+  </Card>
+</div>

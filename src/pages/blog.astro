@@ -10,6 +10,8 @@ const allPosts = await Astro.glob('../content/blog/*.md')
 const tags: string[] = [
   ...new Set(allPosts.map((post) => post.frontmatter.tags).flat()),
 ]
+
+console.log('URL:' + allPosts[0])
 ---
 
 <BaseLayout title={BLOG.TITLE} description={BLOG.DESCRIPTION}>
@@ -23,8 +25,12 @@ const tags: string[] = [
     </TopLayout>
     <BottomLayout>
       <PostCategory tags={tags} />
-
-      <Card colSpan="md:col-span-1" rowSpan="md:row-span-1" title="Categorias">
+      <br />
+      <Card
+        colSpan="md:col-span-1"
+        rowSpan="md:row-span-1"
+        title="Publicaciones"
+      >
         <div
           class="mt-2 flex w-full flex-wrap items-center justify-center gap-2"
         >
@@ -38,7 +44,7 @@ const tags: string[] = [
                     title={post.frontmatter.title}
                     keywords={post.frontmatter.tags}
                     resume={post.frontmatter.description}
-                    link={post.frontmatter.url}
+                    link={post.link}
                   />
                 ))
             }
