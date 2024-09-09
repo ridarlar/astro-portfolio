@@ -7,7 +7,7 @@ author: 'Richard Aguilar'
 image:
   alt: 'Imagen referencial a reactjs con typescript'
   url: 'https://helicon.ai/media/blog/covers/ts-react.png.1080x675_q85_crop.png'
-tags: ["pc gamer", "tutorial", "documentacion","cloud"]
+tags: ["pc gamer","cloud","react"]
 ---
 
 Publicado el: {pubDate}

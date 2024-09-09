@@ -1,0 +1,21 @@
+---
+import BaseLayout from './BaseLayout.astro'
+import Card from '../components/Card.astro'
+import TopLayout from './TopLayout.astro'
+import BottomLayout from './BottomLayout.astro'
+const { frontmatter } = Astro.props
+---
+
+<main>
+  <BaseLayout>
+    <TopLayout>
+      <h1>{frontmatter.title}</h1>
+      <p>Publicado el: {frontmatter.pubDate}</p>
+      <p>Autor: {frontmatter.author}</p>
+      <img src={frontmatter.image.url} alt={frontmatter.image.alt} />
+    </TopLayout>
+    <BottomLayout>
+      <slot />
+    </BottomLayout>
+  </BaseLayout>
+</main>

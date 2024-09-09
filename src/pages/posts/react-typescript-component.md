@@ -1,16 +1,19 @@
 ---
-layout: ../../layouts/BaseLayout.astro
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Cómo Crear un Componente de React con TypeScript: Una Guía Paso a Paso.'
 pubDate: '07-09-2024'
 description: 'En el desarrollo moderno de aplicaciones web, React y TypeScript se han convertido en una combinación poderosa para construir interfaces de usuario robustas y seguras. Si estás buscando aprender cómo crear un componente en React utilizando TypeScript, este tutorial es para ti. Vamos a explorar los pasos esenciales para construir un componente básico y cómo aprovechar TypeScript para mejorar la robustez de tu código.'
 author: 'Richard Aguilar'
 image:
   alt: 'Imagen referencial a reactjs con typescript'
-  url: 'https://helicon.ai/media/blog/covers/ts-react.png.1080x675_q85_crop.png'
+  url: 'https://nfq.lt/uploads/images/blogPost/typescript-cover-193c.jpg.1080x675_q85_crop.png'
 tags: ["react", "javascript", "typescript","web component"]
----
+creditcs: [{
+  name:"ReactJs",
+  link:'https://react.dev/'
+}]
 
-Publicado el: {pubDate}
+---
 
 ## Cómo Crear un Componente de React con TypeScript: Una Guía Paso a Paso
 
