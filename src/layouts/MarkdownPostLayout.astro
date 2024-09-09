@@ -1,21 +1,23 @@
 ---
 import BaseLayout from './BaseLayout.astro'
 import Card from '../components/Card.astro'
-import TopLayout from './TopLayout.astro'
 import BottomLayout from './BottomLayout.astro'
+import TopLayout from './TopLayout.astro'
 const { frontmatter } = Astro.props
 ---
 
 <main>
   <BaseLayout>
-    <TopLayout>
-      <h1>{frontmatter.title}</h1>
-      <p>Publicado el: {frontmatter.pubDate}</p>
-      <p>Autor: {frontmatter.author}</p>
-      <img src={frontmatter.image.url} alt={frontmatter.image.alt} />
-    </TopLayout>
-    <BottomLayout>
-      <slot />
-    </BottomLayout>
+    <Card>
+      <TopLayout>
+        <h1 class="mb-4 text-4xl text-primary">{frontmatter.title}</h1>
+        <p class="mb-1"><strong>Publicado el: </strong>{frontmatter.pubDate}</p>
+        <p class="mb-1"><strong>Autor: </strong>{frontmatter.author}</p>
+        <p class="mb-1"><strong>Resumen: </strong>{frontmatter.resume}</p>
+      </TopLayout>
+      <BottomLayout>
+        <slot />
+      </BottomLayout>
+    </Card>
   </BaseLayout>
 </main>

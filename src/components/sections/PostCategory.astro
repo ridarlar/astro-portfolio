@@ -2,7 +2,7 @@
 import Card from '../Card.astro'
 import { Badge } from '../ui/badge'
 
-const { tags } = Astro.props
+const { tags, link } = Astro.props
 ---
 
 <Card colSpan="md:col-span-1" rowSpan="md:row-span-1" title="Categorias">
@@ -10,7 +10,7 @@ const { tags } = Astro.props
     {
       tags &&
         tags.map((tag: string) => (
-          <a href={`/tags/${tag}`}>
+          <a href={link ? `/tags/${tag}` : `#`}>
             <Badge variant="outline">{tag}</Badge>
           </a>
         ))
